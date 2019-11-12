@@ -2,7 +2,7 @@ import googlemaps
 
 
 def match_city(city):
-    gmaps = googlemaps.Client(key="AIzaSyDlGbIGe2ZuoAU1hhX_KOy6nr4bc28pfBk")
+    gmaps = googlemaps.Client("") # add own google api key here for places
 
     geocode_result = googlemaps.client.find_place(input=city, input_type="textquery", client=gmaps)
 
